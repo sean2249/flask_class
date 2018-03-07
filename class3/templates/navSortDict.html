@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>Navigation </title>
+</head>
+<body>
+    <h2>Welcome!</h2>
+    
+    {% for key, lst in navs %}
+    <h3>{{ key }}</h3>
+    <ul>
+        {% for item in lst%}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    {% endfor %}    
+</body>
+</html>
+

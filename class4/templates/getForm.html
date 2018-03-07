@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Resume </title>
+</head>
+<body>
+    <pre>
+    Hi my friend
+    Please answer the following question
+    </pre>
+    <form action="{{ url_for('getRequest') }}" method="GET">
+        <legend>Your name</legend>
+        <input type='text' name="username">
+        <legend>Your nickname</legend>
+        <input type='text' name="nickname">
+
+        <button type='submit'>Submit!</button>
+    </form>
+
+</body>
+</html>
+

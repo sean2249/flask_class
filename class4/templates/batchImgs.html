@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>Cat Gallery </title>
+</head>
+<body>
+    <pre>
+    Hi my friend
+    This is cat, cat, cat, cat!!!
+    </pre>
+    {% for name, path in pics.items() %}
+    <legend>{{ name }}</legend>
+    <img src="{{ url_for('static', filename=path) }}" width=400>
+    {% endfor %}
+</body>
+</html>
+
